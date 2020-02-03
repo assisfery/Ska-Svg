@@ -1,0 +1,12 @@
+.bg-primary{
+	background: #3aa6f1 !important;
+}
+
+*{
+	font-family: 'Cabin', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Lobster', cursive;
+}
+

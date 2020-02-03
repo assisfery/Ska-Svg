@@ -1,0 +1,9 @@
+.ska svg, [data-ska-object] svg{
+	max-width: 100%;
+	/*transform: rotate(90deg);*/
+}
+
+.ska svg path{
+	/*fill: #3aa6f1 !important;*/
+	/*fill: url(#lgrad-p) #3aa6f1 !important;*/
+}

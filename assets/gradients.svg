@@ -1,0 +1,7 @@
+<svg height="0" width="0">
+  <defs>
+    <linearGradient id="lgrad-p" gradientTransform="rotate(75)"><stop offset="45%" stop-color="#4169e1"></stop><stop offset="99%" stop-color="#c44764"></stop></linearGradient>
+    <linearGradient id="lgrad-s" gradientTransform="rotate(75)"><stop offset="45%" stop-color="#ef3c3a"></stop><stop offset="99%" stop-color="#6d5eb7"></stop></linearGradient>
+    <linearGradient id="lgrad-g" gradientTransform="rotate(75)"><stop offset="45%" stop-color="#585f74"></stop><stop offset="99%" stop-color="#b6bbc8"></stop></linearGradient>
+  </defs>
+</svg>
