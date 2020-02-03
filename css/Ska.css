@@ -8,3 +8,47 @@
 	/*fill: #3aa6f1 !important;*/
 	/*fill: url(#lgrad-p) #3aa6f1 !important;*/
 }
+
+.ska-red svg path{
+	fill: #e76c5f !important;
+}
+
+.ska-green svg path{
+	fill: #22bc63 !important;
+}
+
+.ska-yellow svg path{
+	fill: #d8bc4a !important;
+}
+
+.ska-orange svg path{
+	fill: #fcb045 !important;
+}
+
+.ska-pink svg path{
+	fill: #ea4c88 !important;
+}
+
+.ska-purple svg path{
+	fill: #9b59b6 !important;
+}
+
+.ska-blue svg path{
+	fill: #3aa6f1 !important;
+}
+
+.ska-black svg path{
+	fill: #000 !important;
+}
+
+.ska-dark svg path{
+	fill: #333 !important;
+}
+
+.ska-gray svg path{
+	fill: #ddd !important;
+}
+
+.ska-white svg path{
+	fill: #fff !important;
+}

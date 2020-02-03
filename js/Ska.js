@@ -35,7 +35,21 @@ Ska.loadToObject = function(elem, file)
 
 		if (this.readyState == 4 && this.status == 200)
 		{
-			elem.innerHTML = this.responseText;			
+			elem.innerHTML = this.responseText;
+
+			// SET COLOR
+			var c = elem.getAttribute("data-ska-color");
+
+			if(c)
+			{
+				var p = elem.querySelector("svg path");
+
+				// console.log(elem);
+				// console.log(p);
+
+				if(p)
+					p.style.fill = c;
+			}	
 		}
 
 	};
@@ -81,7 +95,9 @@ Ska.init = function()
 		var d = elements[j].getAttribute("data-ska-object");
 
 		if(d)
+		{
 			Ska.useShapeToObject(elements[j], d);
+		}
 	}
 
 }
