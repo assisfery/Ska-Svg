@@ -1,6 +1,6 @@
+/* BASE */
 .ska svg, [data-ska-object] svg{
 	max-width: 100%;
-	/*transform: rotate(90deg);*/
 	/*filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));*/
 }
 
@@ -9,6 +9,7 @@
 	/*fill: url(#lgrad-p) #3aa6f1 !important;*/
 }
 
+/* COLORS */
 .ska-red svg path{
 	fill: #e76c5f !important;
 }
@@ -52,3 +53,33 @@
 .ska-white svg path{
 	fill: #fff !important;
 }
+
+/* ROTATE */
+.ska-rotate-45 svg{
+	transform: rotate(45deg);
+}
+
+.ska-rotate-90 svg{
+	transform: rotate(90deg);
+}
+
+.ska-rotate-135 svg{
+	transform: rotate(135deg);
+}
+
+.ska-rotate-180 svg{
+	transform: rotate(180deg);
+}
+
+.ska-rotate-225 svg{
+	transform: rotate(225deg);
+}
+
+.ska-rotate-270 svg{
+	transform: rotate(270deg);
+}
+
+.ska-rotate-315 svg{
+	transform: rotate(315deg);
+}
+
