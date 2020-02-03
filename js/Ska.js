@@ -92,3 +92,31 @@ if(window)
 	    Ska.init();
 	});
 }
+
+Ska.supportedObjects = [
+
+	{ name: "base" },
+
+	{ name: "shape1" },
+	{ name: "shape2" },
+	{ name: "shape3" },
+	{ name: "shape4" },
+	{ name: "shape5" },
+	{ name: "shape6" },
+
+	{ name: "curtain1" },
+	{ name: "curtain2" },
+	{ name: "curtain3" },
+	{ name: "curtain4" },
+
+	{ name: "wave1" },
+	{ name: "wave2" },
+	{ name: "wave3" },
+	{ name: "wave4" },
+
+	{ name: "shape-square" },
+	{ name: "shape-pentagon" },
+	{ name: "shape-hexagon" },
+	{ name: "shape-pill" },
+
+];
