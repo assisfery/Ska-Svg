@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>Ska-Svg</title>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -52,7 +54,7 @@
 
 		<div class="row text-center" id="object-list">
 
-			<!-- <div class="col-12 col-sm-4 col-md-3">
+			<!-- <div class="col-6 col-sm-4 col-md-3">
 				<div data-ska-object="base"></div>
 				<p><b>base</b></p>
 				<p>data-ska-object="base"</p>
@@ -68,57 +70,57 @@
 
 		<div class="row text-center">
 
-			<div class="col-12 col-sm-3 col-md-2">
+			<div class="col-6 col-sm-3 col-md-2">
 				<div data-ska-object="base" class="ska-red"></div>
 				<p>class="ska-red"</p>
 			</div>
 
-			<div class="col-12 col-sm-3 col-md-2">
+			<div class="col-6 col-sm-3 col-md-2">
 				<div data-ska-object="base" class="ska-green"></div>
 				<p>class="ska-green"</p>
 			</div>
 
-			<div class="col-12 col-sm-3 col-md-2">
+			<div class="col-6 col-sm-3 col-md-2">
 				<div data-ska-object="base" class="ska-yellow"></div>
 				<p>class="ska-yellow"</p>
 			</div>
 
-			<div class="col-12 col-sm-3 col-md-2">
+			<div class="col-6 col-sm-3 col-md-2">
 				<div data-ska-object="base" class="ska-orange"></div>
 				<p>class="ska-orange"</p>
 			</div>
 
-			<div class="col-12 col-sm-3 col-md-2">
+			<div class="col-6 col-sm-3 col-md-2">
 				<div data-ska-object="base" class="ska-pink"></div>
 				<p>class="ska-pink"</p>
 			</div>
 
-			<div class="col-12 col-sm-3 col-md-2">
+			<div class="col-6 col-sm-3 col-md-2">
 				<div data-ska-object="base" class="ska-purple"></div>
 				<p>class="ska-purple"</p>
 			</div>
 
-			<div class="col-12 col-sm-3 col-md-2">
+			<div class="col-6 col-sm-3 col-md-2">
 				<div data-ska-object="base" class="ska-blue"></div>
 				<p>class="ska-blue"</p>
 			</div>
 
-			<div class="col-12 col-sm-3 col-md-2">
+			<div class="col-6 col-sm-3 col-md-2">
 				<div data-ska-object="base" class="ska-black"></div>
 				<p>class="ska-black"</p>
 			</div>
 
-			<div class="col-12 col-sm-3 col-md-2">
+			<div class="col-6 col-sm-3 col-md-2">
 				<div data-ska-object="base" class="ska-dark"></div>
 				<p>class="ska-dark"</p>
 			</div>
 
-			<div class="col-12 col-sm-3 col-md-2">
+			<div class="col-6 col-sm-3 col-md-2">
 				<div data-ska-object="base" class="ska-gray"></div>
 				<p>class="ska-gray"</p>
 			</div>
 
-			<div class="col-12 col-sm-3 col-md-2 bg-secondary">
+			<div class="col-6 col-sm-3 col-md-2 bg-secondary">
 				<div data-ska-object="base" class="ska-white"></div>
 				<p>class="ska-white"</p>
 			</div>
@@ -130,10 +132,15 @@
 		<p>But you can also put your on color just adding <b><i>data-ska-color="color"</i></b> attribute or editing in css.</p>
 
 		<pre class="alert alert-secondary">&lt;div data-ska-object="base" data-ska-color="#16a085"&gt;&lt;/div&gt;</pre>
+
+		<p>or</p>
+		<pre class="alert alert-secondary">#you-container svg path{
+	fill: #16a085 !important;
+}</pre>
 		
 		<div class="row text-center">
 
-			<div class="col-12 col-sm-3 col-md-2">
+			<div class="col-6 col-sm-3 col-md-2">
 				<div data-ska-object="base" data-ska-color="#16a085"></div>
 			</div>
 
@@ -148,51 +155,168 @@
 		
 		<div class="row text-center">
 
-			<div class="col-12 col-sm-3 col-md-2">
+			<div class="col-6 col-sm-3 col-md-2">
 				<div data-ska-object="base" class="ska-rotate-45"></div>
 				<p>class="ska-rotate-45"</p>
 			</div>
 
-			<div class="col-12 col-sm-3 col-md-2">
+			<div class="col-6 col-sm-3 col-md-2">
 				<div data-ska-object="base" class="ska-rotate-90"></div>
 				<p>class="ska-rotate-90"</p>
 			</div>
 
-			<div class="col-12 col-sm-3 col-md-2">
+			<div class="col-6 col-sm-3 col-md-2">
 				<div data-ska-object="base" class="ska-rotate-135"></div>
 				<p>class="ska-rotate-135"</p>
 			</div>
 
-			<div class="col-12 col-sm-3 col-md-2">
+			<div class="col-6 col-sm-3 col-md-2">
 				<div data-ska-object="base" class="ska-rotate-180"></div>
 				<p>class="ska-rotate-180"</p>
 			</div>
 
-			<div class="col-12 col-sm-3 col-md-2">
+			<div class="col-6 col-sm-3 col-md-2">
 				<div data-ska-object="base" class="ska-rotate-225"></div>
 				<p>class="ska-rotate-225"</p>
 			</div>
 
-			<div class="col-12 col-sm-3 col-md-2">
+			<div class="col-6 col-sm-3 col-md-2">
 				<div data-ska-object="base" class="ska-rotate-270"></div>
 				<p>class="ska-rotate-270"</p>
 			</div>
 
-			<div class="col-12 col-sm-3 col-md-2">
+			<div class="col-6 col-sm-3 col-md-2">
 				<div data-ska-object="base" class="ska-rotate-315"></div>
 				<p>class="ska-rotate-315"</p>
 			</div>
 
-			
+		</div>
+
+		<br><br>
+		<h3>Fill the width and height</h3>
+
+		<p>Fill your shapes to its parent.</p>
+
+		<pre class="alert alert-secondary">&lt;div data-ska-object="wave2" class="ska-fill"&gt;&lt;/div&gt;</pre>
+
+		<div>
+			<div data-ska-object="wave2" class="ska-fill"></div>
+		</div>
+
+		<br><br>
+		<h3>Size</h3>
+
+		<p>Resize your shape.</p>
+
+		<div class="row text-center">
+
+			<div class="col-6 col-sm-6 col-md-4">
+				<div class="bg-secondary">
+					<div data-ska-object="base" class="ska-white ska-fill"></div>
+					<p>class="ska-fill"</p>
+				</div>
+			</div>
+
+			<div class="col-6 col-sm-6 col-md-4">
+				<div class="bg-secondary">
+					<div data-ska-object="base" class="ska-white ska-fill-half"></div>
+					<p>class="ska-fill-half"</p>
+				</div>
+			</div>
+
+			<div class="col-6 col-sm-6 col-md-4">
+				<div class="bg-secondary">
+					<div data-ska-object="base" class="ska-white ska-fill-25"></div>
+					<p>class="ska-fill-25"</p>
+				</div>
+			</div>
+
+		</div>
+		
+	</div>	
+
+	<div class="container py-4">
+	
+		<div class="ska-fixed">
+			<div data-ska-object="base" class="ska-fixed-top ska-fixed-left ska-fill-25 ska-fixed-backward"></div>
+			<h3>Fixed Shapes</h3>
+			<p>You can fixed your shape in some position of its parent.</p>			
+		</div>
+
+		<pre class="alert alert-secondary">&lt;div class="ska-fixed"&gt;
+	&lt;div data-ska-object="base" class="ska-fixed-top ska-fixed-left ska-fill-25 ska-fixed-backward"&gt;&lt;/div&gt;
+	&lt;h3&gt;Fixed Shapes&lt;/h3&gt;
+	&lt;p&gt;You can fixed your shape in some position of its parent.&lt;/p&gt;	
+&lt;/div&gt;
+</pre>
+
+		<br><br><br><br>
+		<div class="row">
+
+			<div class="col-6 col-sm-6 col-md-4 p-2">
+				<div class="bg-secondary ska-fixed" style="height: 200px">
+					<div data-ska-object="base" class="ska-white ska-fill-128px ska-fixed-top ska-fixed-left"></div>
+					<br><br>
+					<p class="text-center">class="ska-fixed-top ska-fixed-left"</p>
+				</div>
+			</div>
+
+			<div class="col-6 col-sm-6 col-md-4 p-2">
+				<div class="bg-secondary ska-fixed" style="height: 200px">
+					<div data-ska-object="base" class="ska-white ska-fill-128px ska-fixed-top ska-fixed-right"></div>
+					<br><br>
+					<p class="text-center">class="ska-fixed-top ska-fixed-right"</p>
+				</div>
+			</div>
+
+			<div class="col-6 col-sm-6 col-md-4 p-2">
+				<div class="bg-secondary ska-fixed" style="height: 200px">
+					<div data-ska-object="base" class="ska-white ska-fill-128px ska-fixed-bottom ska-fixed-left"></div>
+					<br><br>
+					<p class="text-center">class="ska-fixed-bottom ska-fixed-left"</p>
+				</div>
+			</div>
+
+			<div class="col-6 col-sm-6 col-md-4 p-2">
+				<div class="bg-secondary ska-fixed" style="height: 200px">
+					<div data-ska-object="base" class="ska-white ska-fill-128px ska-fixed-bottom ska-fixed-right"></div>
+					<br><br>
+					<p class="text-center">class="ska-fixed-bottom ska-fixed-right"</p>
+				</div>
+			</div>
+
+			<div class="col-6 col-sm-6 col-md-4 p-2">
+				<div class="bg-secondary ska-fixed" style="height: 200px">
+					<div data-ska-object="base" class="ska-white ska-fill-128px ska-fixed-middle"></div>
+					<br><br>
+					<p class="text-center">class="ska-fixed-middle"</p>
+				</div>
+			</div>
+
+			<div class="col-6 col-sm-6 col-md-4 p-2">
+				<div class="bg-secondary ska-fixed" style="height: 200px">
+					<div data-ska-object="base" class="ska-white ska-fill-128px ska-fixed-center"></div>
+					<br><br><br><br><br>
+					<p class="text-center ska-fixed-forward">class="ska-fixed-center"</p>
+				</div>
+			</div>
 
 		</div>
 
+		<br><br>
+		<h3>Gradient</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus labore quod at cumque est! Dolore dicta earum adipisci modi. Aperiam corrupti, voluptatem, quia soluta vitae expedita fugit architecto nisi corporis.</p>
 
-		
+				
+
+	</div>
+
+	<div>
+		<div data-ska-object="wave3" class="ska-fill ska-dark"></div>
 	</div>
 
 	<footer class="bg-dark py-4 text-center text-white">
-		<p>Proudly made by <a href="https://github.com/assisfery" target="_blank">Assis Ferreira</a></p>
+		<p>Made by <a href="https://github.com/assisfery" target="_blank">Assis Ferreira</a></p>
 	</footer>
 	
 </body>

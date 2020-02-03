@@ -4,7 +4,9 @@
 	/*filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));*/
 }
 
-.ska svg path{
+.ska svg path, [data-ska-object] svg path{
+	/*width: 100%;
+	height: 100%;*/
 	/*fill: #3aa6f1 !important;*/
 	/*fill: url(#lgrad-p) #3aa6f1 !important;*/
 }
@@ -43,7 +45,7 @@
 }
 
 .ska-dark svg path{
-	fill: #333 !important;
+	fill: #343a40 !important;
 }
 
 .ska-gray svg path{
@@ -81,5 +83,87 @@
 
 .ska-rotate-315 svg{
 	transform: rotate(315deg);
+}
+
+/* FILL */
+.ska-fill,
+.ska-fill-half,
+.ska-fill-25
+{
+	width: 100%;
+}
+
+.ska-fill svg{
+	width: 100%;
+	height: 100%;
+}
+
+.ska-fill-half svg{
+	width: 50%;
+	height: 50%;
+}
+
+.ska-fill-25 svg{
+	width: 25%;
+	height: 25%;
+}
+
+.ska-fill-128px svg{
+	width: 128px;
+	height: 128px;
+}
+
+
+/* POSITIONS */
+.ska-fixed
+{
+	position: relative;
+}
+
+.ska-fixed-top,
+.ska-fixed-bottom,
+.ska-fixed-left,
+.ska-fixed-right,
+.ska-fixed-center,
+.ska-fixed-middle
+{
+	position: absolute;
+	z-index: 0;
+}
+
+.ska-fixed-backward
+{
+	z-index: -1;
+}
+
+/*.ska-fixed-forward
+{
+	z-index: 9999999;
+}*/
+
+.ska-fixed-top{
+	top: 0;
+}
+
+.ska-fixed-bottom{
+	bottom: 0;
+}
+
+.ska-fixed-left{
+	left: 0;
+}
+
+.ska-fixed-right{
+	right: 0;
+}
+
+.ska-fixed-center{
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.ska-fixed-middle{
+	top: 50%;
+	transform: translateY(-50%);
 }
 
