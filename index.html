@@ -28,14 +28,20 @@
 </head>
 <body>
 
-	<header class="bg-primary text-white text-center py-4 px-2">
+	<main class="container shadow bg-white my-4 p-0 mx-auto rounded-lg">
+
+	<header class="bg-primary text-white text-center py-extrabig">
 
 		<h1>Ska-Svg</h1>
 		<p>A library to use svg shapes in your web page in the easiest way.</p>
 		
 	</header>
 
-	<div class="container py-4">
+	<div>
+		<div data-ska-object="curtain2" class="ska-fill"></div>
+	</div>
+
+	<div class="p-4">		
 
 		<h3>Get Started</h3>
 		<p>Just import the <b><i>Ska.css</i></b> and <b><i>Ska.js</i></b> file.</p>
@@ -52,7 +58,9 @@
 		<h3>Supported Shapes</h3>
 		<p>Below is the list of supported objects.</p>
 
-		<div class="row text-center" id="object-list">
+		<br><br>
+		<h5>Random Shapes</h5>
+		<div class="row text-center" id="list-shapes">
 
 			<!-- <div class="col-6 col-sm-4 col-md-3">
 				<div data-ska-object="base"></div>
@@ -63,65 +71,77 @@
 		</div>
 
 		<br><br>
+		<h5>Random Curtains</h5>
+		<hr>
+		<div class="row text-center" id="list-curtains">
+		</div>
+
+		<br><br>
+		<h5>Random Waves</h5>
+		<hr>
+		<div class="row text-center" id="list-waves">
+		</div>
+
+		<br><br>
 		<h3>Colors</h3>
 		<p>You can add colors class in your shapes.</p>
 
-		<pre class="alert alert-secondary">&lt;div data-ska-object="base" class="ska-red"&gt;&lt;/div&gt;</pre>
+		<pre class="alert alert-secondary">&lt;div data-ska-object="shape2" class="ska-red"&gt;&lt;/div&gt;</pre>
 
 		<div class="row text-center">
 
 			<div class="col-6 col-sm-3 col-md-2">
-				<div data-ska-object="base" class="ska-red"></div>
+				<div data-ska-object="shape2" class="ska-red"></div>
 				<p>class="ska-red"</p>
 			</div>
 
 			<div class="col-6 col-sm-3 col-md-2">
-				<div data-ska-object="base" class="ska-green"></div>
+				<div data-ska-object="shape2" class="ska-green"></div>
 				<p>class="ska-green"</p>
 			</div>
 
 			<div class="col-6 col-sm-3 col-md-2">
-				<div data-ska-object="base" class="ska-yellow"></div>
+				<div data-ska-object="shape2" class="ska-yellow"></div>
 				<p>class="ska-yellow"</p>
 			</div>
 
 			<div class="col-6 col-sm-3 col-md-2">
-				<div data-ska-object="base" class="ska-orange"></div>
+				<div data-ska-object="shape2" class="ska-orange"></div>
 				<p>class="ska-orange"</p>
 			</div>
 
 			<div class="col-6 col-sm-3 col-md-2">
-				<div data-ska-object="base" class="ska-pink"></div>
+				<div data-ska-object="shape2" class="ska-pink"></div>
 				<p>class="ska-pink"</p>
 			</div>
 
 			<div class="col-6 col-sm-3 col-md-2">
-				<div data-ska-object="base" class="ska-purple"></div>
+				<div data-ska-object="shape2" class="ska-purple"></div>
 				<p>class="ska-purple"</p>
 			</div>
 
 			<div class="col-6 col-sm-3 col-md-2">
-				<div data-ska-object="base" class="ska-blue"></div>
+				<div data-ska-object="shape2" class="ska-blue"></div>
 				<p>class="ska-blue"</p>
 			</div>
 
 			<div class="col-6 col-sm-3 col-md-2">
-				<div data-ska-object="base" class="ska-black"></div>
+				<div data-ska-object="shape2" class="ska-black"></div>
 				<p>class="ska-black"</p>
 			</div>
 
 			<div class="col-6 col-sm-3 col-md-2">
-				<div data-ska-object="base" class="ska-dark"></div>
+				<div data-ska-object="shape2" class="ska-dark"></div>
 				<p>class="ska-dark"</p>
 			</div>
 
 			<div class="col-6 col-sm-3 col-md-2">
-				<div data-ska-object="base" class="ska-gray"></div>
+				<div data-ska-object="shape2" class="ska-gray"></div>
 				<p>class="ska-gray"</p>
 			</div>
 
 			<div class="col-6 col-sm-3 col-md-2 bg-secondary">
-				<div data-ska-object="base" class="ska-white"></div>
+				<div data-ska-object="shape2" class="ska-white"></div>
 				<p>class="ska-white"</p>
 			</div>
 
@@ -235,16 +255,16 @@
 		
 	</div>	
 
-	<div class="container py-4">
+	<div class="p-4">
 	
 		<div class="ska-fixed">
-			<div data-ska-object="base" class="ska-fixed-top ska-fixed-left ska-fill-25 ska-fixed-backward"></div>
+			<div data-ska-object="base" class="ska-fixed-top ska-fixed-left ska-fill-128px ska-fixed-backward"></div>
 			<h3>Fixed Shapes</h3>
 			<p>You can fixed your shape in some position of its parent.</p>			
 		</div>
 
 		<pre class="alert alert-secondary">&lt;div class="ska-fixed"&gt;
-	&lt;div data-ska-object="base" class="ska-fixed-top ska-fixed-left ska-fill-25 ska-fixed-backward"&gt;&lt;/div&gt;
+	&lt;div data-ska-object="base" class="ska-fixed-top ska-fixed-left ska-fill-128px ska-fixed-backward"&gt;&lt;/div&gt;
 	&lt;h3&gt;Fixed Shapes&lt;/h3&gt;
 	&lt;p&gt;You can fixed your shape in some position of its parent.&lt;/p&gt;	
 &lt;/div&gt;
@@ -304,20 +324,45 @@
 		</div>
 
 		<br><br>
-		<h3>Gradient</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus labore quod at cumque est! Dolore dicta earum adipisci modi. Aperiam corrupti, voluptatem, quia soluta vitae expedita fugit architecto nisi corporis.</p>
+		<h3>Shadow</h3>
+		<p>You can shaddow effects in your shapes using those classess .</p>
 
-				
+		<div class="row text-center">
+
+			<div class="col-6 col-sm-6 col-md-4">
+				<div data-ska-object="shape4" class="ska-shadow"></div>
+				<p>class="ska-shadow"</p>
+			</div>
+
+			<div class="col-6 col-sm-6 col-md-4">
+				<div data-ska-object="shape4" class="ska-shadow-lg"></div>
+				<p>class="ska-shadow-lg"</p>
+			</div>
+
+		</div>
+
+
+		<br><br>
+		<h3>Gradient</h3>
+		<p>Below we have some gradient available in owr library.</p>
+
+		<br><br>
+		<h3>Contribute</h3>
+		<p></p>
+
+		
 
 	</div>
 
 	<div>
-		<div data-ska-object="wave3" class="ska-fill ska-dark"></div>
+		<div data-ska-object="wave5" class="ska-fill ska-dark"></div>
 	</div>
 
-	<footer class="bg-dark py-4 text-center text-white">
+	<footer class="bg-dark py-big text-center text-white">
 		<p>Made by <a href="https://github.com/assisfery" target="_blank">Assis Ferreira</a></p>
 	</footer>
+
+	</main>
 	
 </body>
 </html>

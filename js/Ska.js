@@ -119,16 +119,23 @@ Ska.supportedObjects = [
 	{ name: "shape4" },
 	{ name: "shape5" },
 	{ name: "shape6" },
+	{ name: "shape7" },
+	{ name: "shape8" },
 
 	{ name: "curtain1" },
 	{ name: "curtain2" },
 	{ name: "curtain3" },
 	{ name: "curtain4" },
+	{ name: "curtain5" },
 
 	{ name: "wave1" },
 	{ name: "wave2" },
 	{ name: "wave3" },
 	{ name: "wave4" },
+	{ name: "wave5" },
+	{ name: "wave6" },
+	{ name: "wave7" },
+	{ name: "wave8" },
 
 	{ name: "shape-square" },
 	{ name: "shape-pentagon" },

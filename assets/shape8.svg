@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="300"
-   height="57"
-   viewBox="0 0 79.374998 15.08125"
+   width="200"
+   height="200"
+   viewBox="0 0 52.916665 52.916668"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.0 r15299"
-   sodipodi:docname="curtain1.svg">
+   sodipodi:docname="shape8.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.6133928"
-     inkscape:cx="129.09107"
-     inkscape:cy="62.93643"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="326.01938"
+     inkscape:cy="229.78973"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -46,7 +46,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -54,12 +54,12 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-281.91873)">
+     transform="translate(0,-244.08332)">
     <path
-       style="fill:#3aa6f1;fill-opacity:1;stroke-width:0.260795"
-       d="m 0,281.91873 h 79.375 v 6.96719 c -16.340583,18.21456 -29.722606,0.87804 -37.926733,-4.82344 -11.392091,-7.91695 -18.820668,16.5643 -41.448267,0 z"
-       id="rect4491"
+       style="fill:#3aa6f1;fill-opacity:1;stroke-width:0.21383812"
+       d="m 52.529387,270.41736 c -1.800906,6.83653 -15.185883,0.53647 -20.086034,5.54679 -4.955791,5.06721 1.386907,19.18556 -5.459817,20.74365 C 13.575007,299.75915 -2.7581782,278.21451 0.39559662,264.56752 2.8276337,254.04363 15.916733,243.31243 26.983536,244.12695 c 12.061332,0.88773 28.685626,14.37133 25.545851,26.29041 z"
+       id="path22"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccscc" />
+       sodipodi:nodetypes="aaasaa" />
   </g>
 </svg>

@@ -1,13 +1,9 @@
 /* BASE */
 .ska svg, [data-ska-object] svg{
 	max-width: 100%;
-	/*filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));*/
 }
 
 .ska svg path, [data-ska-object] svg path{
-	/*width: 100%;
-	height: 100%;*/
-	/*fill: #3aa6f1 !important;*/
 	/*fill: url(#lgrad-p) #3aa6f1 !important;*/
 }
 
@@ -125,7 +121,9 @@
 .ska-fixed-left,
 .ska-fixed-right,
 .ska-fixed-center,
-.ska-fixed-middle
+.ska-fixed-middle,
+.ska-fixed-center-negative,
+.ska-fixed-middle-negative
 {
 	position: absolute;
 	z-index: 0;
@@ -167,3 +165,27 @@
 	transform: translateY(-50%);
 }
 
+.ska-fixed-center.ska-fixed-middle{
+	transform: translate3d(-50%, -50%, 0);
+}
+
+.ska-fixed-center-negative{
+	transform: translateX(-50%);
+}
+
+.ska-fixed-middle-negative{
+	transform: translateY(-50%);
+}
+
+.ska-fixed-center-negative.ska-fixed-middle-negative{
+	transform: translate3d(-50%, -50%, 0);
+}
+
+/* SHADOWS */
+.ska-shadow svg{
+	filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.25));
+}
+
+.ska-shadow-lg svg{
+	filter: drop-shadow(3px 5px 8px rgba(0, 0, 0, 0.25));
+}
