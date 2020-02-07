@@ -57,7 +57,7 @@ Ska.loadToObject = function(elem, file)
 			
 			var rotate = 75;
 			var setRotate = elem.getAttribute("data-ska-gradient-rotate");
-			
+
 			if(setRotate)
 				rotate = setRotate;
 
@@ -65,8 +65,10 @@ Ska.loadToObject = function(elem, file)
 			{
 				var gradientDivDefs = document.querySelector('#gradientDiv defs');
 
+				var ran = Math.floor(Math.random() * 10000);
+
 				if(gradientDivDefs)
-					gradientDivDefs.innerHTML += '<linearGradient id="gradient-custom" gradientTransform="rotate(' + rotate + ')"><stop offset="0%" stop-color="' + startColor + '"></stop><stop offset="99%" stop-color="' + endColor + '"></stop></linearGradient>';
+					gradientDivDefs.innerHTML += '<linearGradient id="gradient-custom-' + ran + '" gradientTransform="rotate(' + rotate + ')"><stop offset="0%" stop-color="' + startColor + '"></stop><stop offset="99%" stop-color="' + endColor + '"></stop></linearGradient>';
 
 				var p = elem.querySelector("svg path");
 
@@ -75,7 +77,7 @@ Ska.loadToObject = function(elem, file)
 				if(p)
 				{
 					p.style.fill = '';
-					p.setAttribute('fill', 'url(#gradient-custom)');
+					p.setAttribute('fill', 'url(#gradient-custom-' + ran + ')');
 
 				}
 			}
@@ -133,6 +135,7 @@ Ska.init = function()
 	// ADD GRADIENT FILE
 	var gradientDiv = document.createElement('div');
 	gradientDiv.id = "gradientDiv";
+	gradientDiv.style.height = 0;
 	document.body.appendChild(gradientDiv);
 
 	Ska.useShape("#gradientDiv", "gradients");

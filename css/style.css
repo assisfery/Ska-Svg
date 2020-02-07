@@ -10,9 +10,9 @@ h1, h2, h3, h4, h5, h6{
 	font-family: 'Lobster', cursive;
 }
 
-body{
+/*body{
 	background: #e1e1e1;
-}
+}*/
 
 .py-big {
 	padding: 64px 0 64px 0;
@@ -22,6 +22,6 @@ body{
 	padding: 96px 0 96px 0;
 }
 
-main{
+/*main{
 	overflow: hidden;
-}
+}*/
