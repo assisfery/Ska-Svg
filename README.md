@@ -2,6 +2,8 @@
 ##  Ska-Svg  
 A library to use svg shapes in your web page in the easiest way.
 
+[![](https://data.jsdelivr.com/v1/package/gh/assisfery/Ska-Svg/badge)](https://www.jsdelivr.com/package/gh/assisfery/Ska-Svg)
+
 ### Demo
 See the demo here: https://assisfery.github.io/Ska-Svg/
 
