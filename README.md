@@ -2,6 +2,9 @@
 ##  Ska-Svg  
 A library to use svg shapes in your web page in the easiest way.
 
+### Demo
+See the demo here: https://assisfery.github.io/Ska-Svg/
+
 ### Get Started
 Just import the  **_Ska.css_**  and  **_Ska.js_**  file.
 
