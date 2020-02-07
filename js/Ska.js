@@ -65,7 +65,7 @@ Ska.loadToObject = function(elem, file)
 			{
 				var gradientDivDefs = document.querySelector('#gradientDiv defs');
 
-				var ran = Math.floor(Math.random() * 10000);
+				var ran = startColor.replace("#", "") + endColor.replace("#", "");//Math.floor(Math.random() * 100);
 
 				if(gradientDivDefs)
 					gradientDivDefs.innerHTML += '<linearGradient id="gradient-custom-' + ran + '" gradientTransform="rotate(' + rotate + ')"><stop offset="0%" stop-color="' + startColor + '"></stop><stop offset="99%" stop-color="' + endColor + '"></stop></linearGradient>';
@@ -73,6 +73,8 @@ Ska.loadToObject = function(elem, file)
 				var p = elem.querySelector("svg path");
 
 				// console.log(p);
+
+				// console.log(ran);
 
 				if(p)
 				{
