@@ -50,6 +50,36 @@ Ska.loadToObject = function(elem, file)
 				if(p)
 					p.style.fill = c;
 			}	
+
+			// SET GRADIENT
+			var startColor = elem.getAttribute("data-ska-gradient-start-color");
+			var endColor = elem.getAttribute("data-ska-gradient-end-color");
+			
+			var rotate = 75;
+			var setRotate = elem.getAttribute("data-ska-gradient-rotate");
+			
+			if(setRotate)
+				rotate = setRotate;
+
+			if(startColor && endColor)
+			{
+				var gradientDivDefs = document.querySelector('#gradientDiv defs');
+
+				if(gradientDivDefs)
+					gradientDivDefs.innerHTML += '<linearGradient id="gradient-custom" gradientTransform="rotate(' + rotate + ')"><stop offset="0%" stop-color="' + startColor + '"></stop><stop offset="99%" stop-color="' + endColor + '"></stop></linearGradient>';
+
+				var p = elem.querySelector("svg path");
+
+				// console.log(p);
+
+				if(p)
+				{
+					p.style.fill = '';
+					p.setAttribute('fill', 'url(#gradient-custom)');
+
+				}
+			}
+
 		}
 
 	};
@@ -99,6 +129,13 @@ Ska.init = function()
 			Ska.useShapeToObject(elements[j], d);
 		}
 	}
+
+	// ADD GRADIENT FILE
+	var gradientDiv = document.createElement('div');
+	gradientDiv.id = "gradientDiv";
+	document.body.appendChild(gradientDiv);
+
+	Ska.useShape("#gradientDiv", "gradients");
 
 }
 

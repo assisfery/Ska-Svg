@@ -3,10 +3,6 @@
 	max-width: 100%;
 }
 
-.ska svg path, [data-ska-object] svg path{
-	/*fill: url(#lgrad-p) #3aa6f1 !important;*/
-}
-
 /* COLORS */
 .ska-red svg path{
 	fill: #e76c5f !important;
@@ -189,3 +185,37 @@
 .ska-shadow-lg svg{
 	filter: drop-shadow(3px 5px 8px rgba(0, 0, 0, 0.25));
 }
+
+/* GRADIENTS */
+.ska-gradient-1 svg path{
+	fill: url(#gradient-1) #3aa6f1 !important;
+}
+
+.ska-gradient-2 svg path{
+	fill: url(#gradient-2) #3aa6f1 !important;
+}
+
+.ska-gradient-3 svg path{
+	fill: url(#gradient-3) #3aa6f1 !important;
+}
+
+.ska-gradient-4 svg path{
+	fill: url(#gradient-4) #3aa6f1 !important;
+}
+
+.ska-gradient-5 svg path{
+	fill: url(#gradient-5) #3aa6f1 !important;
+}
+
+.ska-gradient-6 svg path{
+	fill: url(#gradient-6) #3aa6f1 !important;
+}
+
+.ska-gradient-7 svg path{
+	fill: url(#gradient-7) #3aa6f1 !important;
+}
+
+.ska-gradient-8 svg path{
+	fill: url(#gradient-8) #3aa6f1 !important;
+}
+
