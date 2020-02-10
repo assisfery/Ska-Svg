@@ -178,6 +178,9 @@ Ska.supportedObjects = [
 	{ name: "shape6" },
 	{ name: "shape7" },
 	{ name: "shape8" },
+	{ name: "shape9" },
+	{ name: "shape10" },
+	{ name: "shape11" },
 
 	{ name: "curtain1" },
 	{ name: "curtain2" },
