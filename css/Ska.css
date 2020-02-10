@@ -186,7 +186,7 @@
 	filter: drop-shadow(3px 5px 8px rgba(0, 0, 0, 0.25));
 }
 
-/* GRADIENTS */
+/* GRADIENTS FOR SVG SHAPES */
 .ska-gradient-1 svg path{
 	fill: url(#gradient-1) #3aa6f1 !important;
 }
@@ -217,5 +217,23 @@
 
 .ska-gradient-8 svg path{
 	fill: url(#gradient-8) #3aa6f1 !important;
+}
+
+/* GRADIENT FOR CONTAINERS */
+
+.ska-gradient-box-5{
+	background: linear-gradient(90deg, rgb(254, 1, 204) 0%, rgb(53, 51, 154) 100%);
+}
+
+.ska-gradient-box-6{
+	background: linear-gradient(90deg, #56ab2f 0%, #a8e063 100%);
+}
+
+.ska-gradient-box-7{
+	background: linear-gradient(90deg, #83EAF1 0%, #63A4FF 100%);
+}
+
+.ska-gradient-box-8{
+	background: linear-gradient(90deg, #FF8489 0%, #D5ADC8 100%);
 }
 

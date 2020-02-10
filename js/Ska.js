@@ -2,7 +2,7 @@ var Ska = {};
 
 Ska.baseUrl = "";
 
-Ska.load = function(elem, file)
+Ska.load = function(elem, file, callback = null)
 {
 	var xhttp = new XMLHttpRequest();
 
@@ -17,7 +17,9 @@ Ska.load = function(elem, file)
 			{
 				elements[i].innerHTML = this.responseText;
 			}
-			
+
+			if(callback)
+				callback();			
 		}
 
 	};
@@ -65,10 +67,15 @@ Ska.loadToObject = function(elem, file)
 			{
 				var gradientDivDefs = document.querySelector('#gradientDiv defs');
 
-				var ran = startColor.replace("#", "") + endColor.replace("#", "");//Math.floor(Math.random() * 100);
+				var ran = startColor.replace("#", "") + endColor.replace("#", "");
+				//Math.floor(Math.random() * 100);
+
+				var newGradient = '<linearGradient id="gradient-custom-' + ran + '" gradientTransform="rotate(' + rotate + ')"><stop offset="0%" stop-color="' + startColor + '"></stop><stop offset="99%" stop-color="' + endColor + '"></stop></linearGradient>';
 
 				if(gradientDivDefs)
-					gradientDivDefs.innerHTML += '<linearGradient id="gradient-custom-' + ran + '" gradientTransform="rotate(' + rotate + ')"><stop offset="0%" stop-color="' + startColor + '"></stop><stop offset="99%" stop-color="' + endColor + '"></stop></linearGradient>';
+					gradientDivDefs.innerHTML += newGradient;
+				else
+					Ska.gradientCache += newGradient;
 
 				var p = elem.querySelector("svg path");
 
@@ -92,9 +99,9 @@ Ska.loadToObject = function(elem, file)
 	xhttp.send();
 }
 
-Ska.useShape = function(element, shapeType)
+Ska.useShape = function(element, shapeType, callback = null)
 {
-	Ska.load(element, Ska.baseUrl + "assets/" + shapeType + ".svg");
+	Ska.load(element, Ska.baseUrl + "assets/" + shapeType + ".svg", callback);
 }
 
 Ska.useShapeToObject = function(element, shapeType)
@@ -106,7 +113,6 @@ Ska.script = document.currentScript;
 
 Ska.init = function()
 {
-	//alert(Ska.script.src);
 
 	// GET BASE URL TO GET THE SVG FILES WITH AJAX
 	// BECAUSE ITS LOAD IN DIRECTORY SKA-SVG/ASSETS
@@ -115,13 +121,28 @@ Ska.init = function()
 	var i = Ska.script.src.indexOf("js/Ska");
 
 	if(i > -1)
-		Ska.baseUrl = Ska.script.src.substring(0, i);
+		Ska.baseUrl = Ska.script.src.substring(0, i);	
 
-	//alert(Ska.baseUrl);
+	// ADD GRADIENT CONTAINER
+	var gradientDiv = document.createElement('div');
+	gradientDiv.id = "gradientDiv";
+	gradientDiv.style.height = 0;
+	document.body.appendChild(gradientDiv);
+
+	// LOAD GRADIENT FILES
+	Ska.useShape("#gradientDiv", "gradients", function(){	
+
+		var gradientDivDefs = document.querySelector('#gradientDiv defs');
+
+		if(gradientDivDefs)
+		{
+			gradientDivDefs.innerHTML += Ska.gradientCache;
+			Ska.gradientCache = "";
+		}
+
+	});
 
 	// INITIALIZE SVG
-	//alert("Yeah");
-
 	var elements = document.querySelectorAll("[data-ska-object]");
 
 	for(var j = 0; j < elements.length; j++)
@@ -134,14 +155,6 @@ Ska.init = function()
 		}
 	}
 
-	// ADD GRADIENT FILE
-	var gradientDiv = document.createElement('div');
-	gradientDiv.id = "gradientDiv";
-	gradientDiv.style.height = 0;
-	document.body.appendChild(gradientDiv);
-
-	Ska.useShape("#gradientDiv", "gradients");
-
 }
 
 if(window)
@@ -150,6 +163,8 @@ if(window)
 	    Ska.init();
 	});
 }
+
+Ska.gradientCache = "";
 
 Ska.supportedObjects = [
 

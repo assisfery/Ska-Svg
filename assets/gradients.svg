@@ -9,7 +9,7 @@
 
     <linearGradient id="gradient-4" gradientTransform="rotate(75)"><stop offset="45%" stop-color="#ff7e5f"></stop><stop offset="100%" stop-color="#feb47b"></stop></linearGradient>
 
-    <linearGradient id="gradient-5" gradientTransform="rotate(75)"><stop offset="0%" stop-color="#ff00cc"></stop><stop offset="100%" stop-color="#333399"></stop></linearGradient>
+    <linearGradient id="gradient-5" gradientTransform="rotate(0)"><stop offset="0%" stop-color="#ff00cc"></stop><stop offset="100%" stop-color="#333399"></stop></linearGradient>
 
 	<linearGradient id="gradient-6" gradientTransform="rotate(0)"><stop offset="0%" stop-color="#56ab2f"></stop><stop offset="100%" stop-color="#a8e063"></stop></linearGradient>
 
