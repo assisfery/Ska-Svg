@@ -8,7 +8,15 @@ A library to use svg shapes in your web page in the easiest way.
 See the demo here: https://assisfery.github.io/Ska-Svg/
 
 ### Get Started
-Just import the  **_Ska.css_**  and  **_Ska.js_**  file.
+Just import the  **_Ska.css_**  and  **_Ska.js_**  files.
+
+```
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/assisfery/Ska-Svg@1.0/css/Ska.css">
+```
+
+```
+<script src="https://cdn.jsdelivr.net/gh/assisfery/Ska-Svg@1.0/js/Ska.js"></script>
+```
 
 ### Use Shape
 To use a svg shape just put  **_data-ska-object="name_of_object"_**  attribute in your html container.
